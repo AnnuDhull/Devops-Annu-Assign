@@ -1,23 +1,23 @@
 name: Nameworkflow2
 
 on:
- push:
-  branches: ["main"]
+  push:
+    branches: ["main"]
 
 jobs:
 
  Annu2job:
-  runs-on: windows-latest
+   runs-on: windows-latest
 
-steps:
-  -uses:actions/checkout@v3
-    -name: Run a one-line script
-     run: echo HEYYYYY!!! I m on VSCODE. 
+   steps:
+    - uses:actions/checkout@v3
+    - name: Run a one-line script
+      run: echo HEYYYYY!!! I m on VSCODE. 
 
-    -name: Run a multi-line script
+    - name: Run a multi-line script
       run: 
-            echo I m easy to use , 
-            echo Try to work here .
+        echo I m easy to use , 
+        echo Try to work here .
          
 
 
